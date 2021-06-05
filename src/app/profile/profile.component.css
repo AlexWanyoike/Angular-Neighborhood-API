@@ -1,0 +1,27 @@
+.form-text{
+    position: center;
+    width: 100%;
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid #ccc7c7;
+    font-family: inherit;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+.btn{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
