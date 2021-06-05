@@ -5,11 +5,15 @@
     padding: 0;
 }
 
+body{
+	font-family: 'Crimson Text', serif;
+}
+
 header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 25px 10%;
+padding: 11px 10%;
 background-color: #24252a;
 }
 

@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
 import { DetailsComponent } from './details/details.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { DetailsComponent } from './details/details.component';
     HomeBodyComponent,
     routingComponents,
     DetailsComponent,
+    CreateProfileComponent,
     
   ],
   imports: [
