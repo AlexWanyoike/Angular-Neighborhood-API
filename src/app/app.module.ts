@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
 import { DetailsComponent } from './details/details.component';
 import { CreateProfileComponent } from './create-profile/create-profile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
     routingComponents,
     DetailsComponent,
     CreateProfileComponent,
+    EditProfileComponent,
     
   ],
   imports: [
