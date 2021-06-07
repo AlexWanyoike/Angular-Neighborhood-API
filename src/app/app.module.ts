@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule , routingComponents } from './app-routing.module';
@@ -10,7 +10,14 @@ import { HomeBodyComponent } from './home-body/home-body.component';
 import { DetailsComponent } from './details/details.component';
 import { CreateProfileComponent } from './create-profile/create-profile.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-
+import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
+import { BusinessComponent } from './business/business.component';
+import { ShowNeighborhoodComponent } from './neighborhood/show-neighborhood/show-neighborhood.component';
+import { AddEditNeighborhoodComponent } from './neighborhood/add-edit-neighborhood/add-edit-neighborhood.component';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule , ReactiveFormsModule } from '@angular/forms'
+import { SharedService } from './shared.service';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -23,13 +30,21 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     DetailsComponent,
     CreateProfileComponent,
     EditProfileComponent,
+    NeighborhoodComponent,
+    BusinessComponent,
+    ShowNeighborhoodComponent,
+    
+    AddEditNeighborhoodComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
