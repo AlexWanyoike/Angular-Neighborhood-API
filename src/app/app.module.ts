@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormsModule , ReactiveFormsModule } from '@angular/forms'
 import { SharedService } from './shared.service';
 import { NgModule } from '@angular/core';
+import { AddEditBusinessComponent } from './business/add-edit-business/add-edit-business.component';
+import { ShowBusinessComponent } from './business/show-business/show-business.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { NgModule } from '@angular/core';
     ShowNeighborhoodComponent,
     
     AddEditNeighborhoodComponent,
+         AddEditBusinessComponent,
+         ShowBusinessComponent,
     
   ],
   imports: [
