@@ -1,4 +1,5 @@
 
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule , routingComponents } from './app-routing.module';
@@ -12,14 +13,14 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
 import { BusinessComponent } from './business/business.component';
+import { ShowBusinessComponent } from './business/show-business/show-business.component';
+import { AddEditBusinessComponent } from './business/add-edit-business/add-edit-business.component';
 import { ShowNeighborhoodComponent } from './neighborhood/show-neighborhood/show-neighborhood.component';
 import { AddEditNeighborhoodComponent } from './neighborhood/add-edit-neighborhood/add-edit-neighborhood.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule , ReactiveFormsModule } from '@angular/forms'
 import { SharedService } from './shared.service';
 import { NgModule } from '@angular/core';
-import { AddEditBusinessComponent } from './business/add-edit-business/add-edit-business.component';
-import { ShowBusinessComponent } from './business/show-business/show-business.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,9 @@ import { ShowBusinessComponent } from './business/show-business/show-business.co
     NeighborhoodComponent,
     BusinessComponent,
     ShowNeighborhoodComponent,
-    
+    ShowBusinessComponent,
+    AddEditBusinessComponent,
     AddEditNeighborhoodComponent,
-         AddEditBusinessComponent,
-         ShowBusinessComponent,
     
   ],
   imports: [

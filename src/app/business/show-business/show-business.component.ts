@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/shared.service'
 
 @Component({
   selector: 'app-show-business',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowBusinessComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:SharedService) { }
+
+  BusinessList:any=[];
 
   ngOnInit(): void {
+    this.refreshBusinessList();
   }
+
+  refreshBusinessList(){
+    this.service.getBusinessList().subscribe(data=>{
+      this.BusinessList=data;
+      // this.NeighborhoodListWithoutFilter=data;
+    });
+  }
+
 
 }

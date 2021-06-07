@@ -27,6 +27,23 @@ readonly APIUrl = "http://127.0.0.1:8000";
   deleteneighborhood(val:any){
     return this.http.delete(this.APIUrl + '/api/delete/'+val);
   }
+  
+
+  getBusinessList():Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl + '/api/business/');
+  }
+
+  addBusiness(val:any){
+    return this.http.post(this.APIUrl + '/api/business/',val);
+  }
+
+  updateBusiness(val:any){
+    return this.http.put(this.APIUrl + '/api/update/business/',val);
+  }
+
+  deleteBusiness(val:any){
+    return this.http.delete(this.APIUrl + '/api/delete/'+val);
+  }
 
   getAllNeighborhoodNames():Observable<any[]>{
     return this.http.get<any[]>(this.APIUrl+'neighbors/');
